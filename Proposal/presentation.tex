@@ -1,0 +1,76 @@
+\documentclass{beamer}
+\usetheme{UChicago}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf}
+\graphicspath{ {images/} }
+
+\usepackage{graphicx}
+
+\author[]{Reid McIlroy-Young}
+\date{April 5, 2017}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Question}
+How do the tools used by scientists shape their work?
+
+Specifically: 
+\begin{center}
+\Huge What causes new scientific software to be adopted by a community and what communities are most likely to integrate a new tool?
+\end{center}
+
+\end{frame}
+\begin{frame}
+\frametitle{Data}
+\begin{itemize}
+\item Scientific meta-data collections
+	\begin{itemize}
+	\item Web of Science, pubmed, etc
+	\end{itemize}
+\item Open source portals 
+	\begin{itemize}
+	\item CRAN, Github, PyPi, etc
+	\end{itemize}
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Method}
+\begin{itemize}
+\item Identify communities / disciplines to study
+	\begin{itemize} 
+	\item e.g. statistics community
+	\end{itemize}
+\item Develop means of identifying new software tools
+	\begin{itemize}
+	\item some subset of journals publish new software: \textit{ journal of statistical software}, \textit{The R Journal}, \textit{Journal of Multiscale Modelling and Simulation}
+	\item Pubmed has some of the linking already done
+	\item Generalize to other sources by hand and ML techniques
+		\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Analysis}
+\begin{itemize}
+\item Can we identifying accurately publications introducing new software packages, libraries, code snippets, etc?
+
+\item How are new tools distributed within the network? 
+
+\item What predicts their success, both in the literature and in usage?
+
+\item What causes them to adopted by their scientific community, by other communities and/or non-scientists? 
+
+\item What communities are most frequently adopting new tools? 
+\end{itemize}
+\end{frame}
+
+\end{document}
